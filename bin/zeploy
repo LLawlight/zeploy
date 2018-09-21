@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const pkg = require('../package.json'), program = require('commander');
+
+program
+  .version(pkg.version)
+  .usage('<cmd> <env>')
+  .arguments('<cmd> <env>')
+  .action(function (cmd, env) {
+    require('../index')(cmd, env)
+  })
+  .parse(process.argv);
+
+if (!process.argv.slice(2).length) {
+  program.outputHelp()
+}
