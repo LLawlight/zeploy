@@ -36,13 +36,13 @@ edit `.zeployrc` in root directory:
 ```json
 {
   "production": {
-    ssh: {
-      host: "123.45.67.89",
-      username: "root",
-      password: "123456"
+    "ssh": {
+      "host": "123.45.67.89",
+      "username": "root",
+      "password": "123456"
     },
-    distPath: "dist", // relative path
-    targetPath: "/project/project-name" // absolute path
+    "distPath": "dist", // relative path
+    "targetPath": "/project/project-name" // absolute path
   }
 }
 ```
