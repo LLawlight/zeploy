@@ -2,19 +2,30 @@
 
 > Automated deployment tool
 
-## Installation
+## Installation and Usage
 
 ### Local
 
+#### Installation
+
 ```bash
-npm install zeploy --save
+npm install zeploy --D
 ```
 or
 ```bash
-yarn add zeploy
+yarn add zeploy -D
+```
+
+#### config
+create an environment configuration:
+
+```bash
+./node_modules/.bin/zeploy config production
 ```
 
 ### Global
+
+#### Installation
 ```bash
 npm install -g zeploy
 ```
@@ -22,14 +33,14 @@ or
 ```bash
 yarn global add zeploy
 ```
-
-## Usage
-
+#### config
 create an environment configuration:
 
 ```bash
-zeploy config prodution
+zeploy config production
 ```
+
+## Configuration
 
 edit `.zeployrc` in root directory:
 
