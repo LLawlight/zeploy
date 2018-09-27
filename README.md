@@ -54,7 +54,7 @@ edit `.zeployrc` in root directory:
     },
     "distPath": "dist", // relative path
     "targetPath": "/project/project-name", // absolute path
-    "keepReleases": 10 // Save the number of published versions(default 10)
+    "keepReleases": "10" // Save the number of published versions(default 10)
   }
 }
 ```
