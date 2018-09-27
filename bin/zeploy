@@ -20,6 +20,13 @@ program
     require('../lib/publish')(env)
   })
 
+  program
+  .command('rollback <env>')
+  .description('回滚版本')
+  .action(env => {
+    require('../lib/rollback')(env)
+  })
+
 program.parse(process.argv)
 
 if (!process.argv.slice(2).length) {

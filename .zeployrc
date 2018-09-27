@@ -1,0 +1,11 @@
+{
+  "test": {
+    "ssh": {
+      "host": "118.24.52.91",
+      "username": "root",
+      "password": "zyx19936688"
+    },
+    "distPath": "lib",
+    "targetPath": "/data/weixue"
+  }
+}

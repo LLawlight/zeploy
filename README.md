@@ -53,7 +53,8 @@ edit `.zeployrc` in root directory:
       "password": "123456"
     },
     "distPath": "dist", // relative path
-    "targetPath": "/project/project-name" // absolute path
+    "targetPath": "/project/project-name", // absolute path
+    "keepReleases": 10 // Save the number of published versions(default 10)
   }
 }
 ```
@@ -86,18 +87,20 @@ dist
 // your targetPath
 project
   - project-name
-    - index.html
-    - static
-      - css
-        - app.css
-      - img
-      - js
-        - 0.js
-        - 1.js
-        - 2.js
-        - app.js
-        - vendor.js
-        - manifest.js
+    - releases
+    - dist
+      - index.html
+      - static
+        - css
+          - app.css
+        - img
+        - js
+          - 0.js
+          - 1.js
+          - 2.js
+          - app.js
+          - vendor.js
+          - manifest.js
 ```
 
 

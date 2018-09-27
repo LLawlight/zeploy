@@ -1,7 +1,7 @@
 {
   "name": "zeploy",
   "description": "自动化部署工具",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "author": "L·Lawliet <me@zhaoyuxiang.cn>",
   "license": "MIT",
   "repository": {
@@ -11,6 +11,9 @@
   "bin": {
     "zeploy": "bin/zeploy"
   },
+  "keywords": [
+    "deploy"
+  ],
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.18.0",
