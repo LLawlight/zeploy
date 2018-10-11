@@ -20,7 +20,7 @@ program
     require('../lib/publish')(env)
   })
 
-  program
+program
   .command('rollback <env>')
   .description('回滚版本')
   .action(env => {
