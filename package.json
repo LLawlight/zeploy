@@ -1,7 +1,7 @@
 {
   "name": "zeploy",
   "description": "自动化部署工具",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "L·Lawliet <me@zhaoyuxiang.cn>",
   "license": "MIT",
   "repository": {

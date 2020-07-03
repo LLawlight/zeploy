@@ -42,19 +42,24 @@ zeploy config production
 
 ## Configuration
 
-edit `.zeployrc` in root directory:
+edit `zeploy.config.js` in root directory:
 
-```json
-{
+```js
+module.exports = {
   "production": {
     "ssh": {
       "host": "123.45.67.89",
       "username": "root",
       "password": "123456"
     },
-    "distPath": "dist", // relative path
-    "targetPath": "/project/project-name", // absolute path
-    "keepReleases": "10" // Save the number of published versions(default 10)
+    /** Relative path */
+    "distPath": "dist",
+    /** Absolute path */
+    "targetPath": "/project/project-name",
+    /** Save the number of published versions(default 10) */
+    "keepReleases": "10",
+    /** Can only be executed if the environment name is exactly the same as the branch name */
+    "checkBranch": false
   }
 }
 ```
@@ -102,5 +107,3 @@ project
           - vendor.js
           - manifest.js
 ```
-
-
